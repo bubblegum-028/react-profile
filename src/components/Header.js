@@ -7,7 +7,7 @@ export default function AppHeader() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg"> {/* A single Navbar */}
       <Container>
-        <Navbar.Brand as={Link} to="/">My Profile</Navbar.Brand> {/* Use Link for routing */}
+        <Navbar.Brand as={Link} to="/">Profile</Navbar.Brand> {/* Use Link for routing */}
         <Nav className="me-auto">
           <Nav.Link as={Link} to="/">Home</Nav.Link> {/* Use Link for routing */}
           <Nav.Link as={Link} to="/about">About</Nav.Link>

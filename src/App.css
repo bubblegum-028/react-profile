@@ -1,105 +1,157 @@
+/* General App styles */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #070a0f; /* Dark background for the header */
+  min-height: 100vh; /* Full height of the viewport */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #e2e8f2; /* Light color for text */
+  padding: 30px;
 }
 
-.App-link {
-  color: #9913cf;
+/* About Section Styles */
+.about-background {
+  background-color: #070a0f; /* Dark background for contrast */
+  padding: 3rem; /* Padding around the container */
+  min-height: 100vh; /* Full height of the viewport */
 }
 
-nav {
-  background-color: #a69cac;
-  padding: 0.5rem;
+.about-header {
+  color: white; /* White color for the header */
 }
 
-nav button {
-  margin: 0 1rem;
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+/* Image Styles */
+.about-image {
+  width: 200px; /* Fixed width for image */
+  height: 200px; /* Fixed height for image */
+  object-fit: cover; /* Cover the area without distortion */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 1rem; /* Spacing below the image */
 }
 
-nav button:hover {
-  background-color: white;
-  color: #a69cac;
+/* Card Styles */
+.card {
+  border: none; /* Remove default card border */
 }
 
+.card-body {
+  background-color: #282c34; /* Slightly lighter than container for contrast */
+}
+
+/* Form Styles */
 form {
-  background: #282c34;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  margin: 2px auto;
-  max-width: 400px;
+  background: #1c1f25; /* Dark background for form */
+  padding: 20px 30px; /* Padding for form */
+  border-radius: 10px; /* Rounded corners for form */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Shadow for form */
+  margin: 20px auto; /* Margin auto for centering */
+  max-width: 500px; /* Max width for form */
+  color: #e2e8f2; /* Light color for form text */
 }
 
+/* Form Label and Input Styles */
 label {
-  color: white;
-  margin: 10px 0 5px;
+  display: block; /* Block display for labels */
+  text-align: left; /* Left align labels */
+  margin: 15px 0 5px; /* Margin for labels */
 }
 
 input,
 textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  width: 90%;
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #444; /* Border color for inputs */
+  border-radius: 6px; /* Rounded corners for inputs */
+  margin-bottom: 15px; /* Margin below inputs */
+  background-color: #2c2f35; /* Dark background for inputs */
+  color: #e2e8f2; /* Light color for input text */
 }
 
 input:focus,
 textarea:focus {
-  border-color: #9913cf;
-  outline: none;
+  border-color: #7c58b5; /* Border color on focus */
+  outline: none; /* Remove outline on focus */
 }
 
+/* Button Styles */
 button[type='submit'] {
-  background-color: #9913cf;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
+  background-color: #7c58b5; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border from button */
+  padding: 12px 25px; /* Padding for button */
+  border-radius: 8px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s; /* Transition effects */
 }
 
 button[type='submit']:hover {
-  background-color: #a69cac;
+  background-color: #6b4fa1; /* Darker color on hover */
+  transform: scale(1.05); /* Scale effect on hover */
 }
 
-#responseMessage {
-  margin-top: 15px;
-  color: #5cb85c;
+/* Navbar Styles */
+.navbar-dark .navbar-nav .nav-link {
+  color: #e2e8f2; /* Light color for navbar links */
+  margin: 0 10px; /* Margin for links */
+  padding: 10px 15px; /* Padding for links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s, color 0.3s; /* Transition effects for links */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #7c58b5; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Responsive font size */
+    padding: 20px; /* Padding adjustment */
   }
-  to {
-    transform: rotate(360deg);
+
+  form {
+    width: 100%; /* Full width for form */
+    max-width: 95%; /* Max width adjustment */
   }
+
+  .about-image {
+    width: 150px; /* Adjust size for smaller screens */
+    height: 150px; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Smaller font size for very small screens */
+  }
+
+  form {
+    width: 100%; /* Full width for form */
+    max-width: 98%; /* Max width adjustment */
+  }
+}
+
+/* Home Component Specific Styles */
+.home-header {
+  margin-bottom: 4rem; /* Margin for the Home header */
+}
+
+.home-text {
+  color: #e2e8f2; /* Text color for Home component */
+}
+
+.home-card {
+  border: none; /* No border for the card */
+}
+
+.home-card-body {
+  background-color: #282c34; /* Background color for card body */
 }

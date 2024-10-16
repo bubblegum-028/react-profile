@@ -6,8 +6,9 @@ function Skills() {
       <h2>My Skills</h2>
       <ul>
         <li>Photography</li>
-        <li>Editing</li>
-        <li>Java</li>
+        <li>Photo and Video Editing</li>
+        <li>Java Programming</li>
+        <li>Web Development</li>
       </ul>
     </div>
   );
