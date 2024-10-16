@@ -10,5 +10,4 @@ function About() {
   );
 }
 
-// Make sure you are using default export
 export default About;
