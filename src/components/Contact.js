@@ -1,4 +1,3 @@
-// Contact.js
 import React, { useState } from 'react';
 import SubmissionSuccess from './SubmissionSuccess';
 
@@ -22,9 +21,9 @@ function Contact() {
 
   return (
     <div className="App-header">
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
+      <h2 className="text-light">Contact Me</h2>
+      <form onSubmit={handleSubmit} className="mb-4">
+        <label className="text-light">
           Name:
           <input
             type="text"
@@ -34,7 +33,7 @@ function Contact() {
             required
           />
         </label>
-        <label>
+        <label className="text-light">
           Email:
           <input
             type="email"
@@ -44,7 +43,7 @@ function Contact() {
             required
           />
         </label>
-        <label>
+        <label className="text-light">
           Message:
           <textarea
             name="message"
@@ -53,7 +52,7 @@ function Contact() {
             required
           />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit" className="btn btn-primary">Send</button>
       </form>
     </div>
   );

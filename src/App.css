@@ -41,9 +41,23 @@
   border: none; /* Remove default card border */
 }
 
-.card-body {
-  background-color: #282c34; /* Slightly lighter than container for contrast */
+/* Home Card Styles */
+.home-card {
+  border: none; /* No border for the card */
+  border-radius: 10px; /* Add border radius if needed */
+  background-color: #282c34; /* Ensure background matches the body */
 }
+
+.home-card-body {
+  background-color: #282c34; /* Match background color of the card */
+  border-radius: 10px; /* Keep the same border radius for consistency */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.home-card-body:hover {
+  background-color: #3a3f47; /* Change color on hover */
+}
+
 
 /* Form Styles */
 form {
@@ -154,4 +168,27 @@ button[type='submit']:hover {
 
 .home-card-body {
   background-color: #282c34; /* Background color for card body */
+}
+/* Adjustments for mobile-friendly design */
+@media (max-width: 576px) {
+  .home-header {
+    font-size: 1.5rem; /* Smaller header font size */
+  }
+  
+  .about-header {
+    font-size: 1.5rem; /* Smaller about header font size */
+  }
+
+  form {
+    padding: 15px; /* Adjust padding for form */
+  }
+
+  input,
+  textarea {
+    padding: 12px; /* Larger padding for easier touch input */
+  }
+
+  button[type='submit'] {
+    padding: 10px 20px; /* Adjust button padding for mobile */
+  }
 }
